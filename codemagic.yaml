@@ -12,6 +12,12 @@ workflows:
             - name: CI\CD Started
               script: echo "Welcome to your CI CD set up"
         publishing:
+            slack:
+                channel: '#channel-name'
+                notify_on_build_start: true # To receive a notification when a build starts
+                notify:
+                  success: false # To not receive a notification when a build succeeds
+                  failure: false # To not receive a notification when a build fails
             email:
                 recipients:
                     - adamyanlina97@gmail.com
