@@ -1,0 +1,10 @@
+workflows:
+    hello-workspace:
+        name: IOS Hello Pipeline
+        scripts:
+            - name: CI\CD Started
+              script: echo "Welcome to your CI\CD set up"
+        publishing:
+            email:
+                recipients:
+                    - adamyanlina97@gmail.com
