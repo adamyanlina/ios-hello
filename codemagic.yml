@@ -4,9 +4,8 @@ workflows:
             events:
                 - push
             branch_patterns:
-                - pattern: *
                 - pattern: master
-                include: false
+                  include: false
             cancel_previous_builds: true
         name: IOS Hello Pipeline
         scripts:
