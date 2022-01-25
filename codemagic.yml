@@ -1,5 +1,13 @@
 workflows:
     hello-workspace:
+        triggering:
+            events:
+                - push
+            branch_patterns:
+                - pattern: *
+                - pattern: master
+                include: false
+            cancel_previous_builds: true
         name: IOS Hello Pipeline
         scripts:
             - name: CI\CD Started
